@@ -8,7 +8,6 @@ class LoginPage {
         cy.get(this.singUpButton).click();
         return this
     }
-
 }
 
 

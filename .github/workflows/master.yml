@@ -26,7 +26,6 @@ jobs:
         with:
           command: npm run cy:report
           browser: chrome
-          start: npm start
       
       - name: Publish Report
         if: always()

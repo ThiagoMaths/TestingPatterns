@@ -15,7 +15,6 @@
     "cy:run": "cypress run",
     "report:clean": "rm -rf cypress/reports",
     "cy:report": "npm run report:clean && npm run cy:run",
-    "start": "node server.js"
   }
 
 }

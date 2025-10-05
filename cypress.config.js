@@ -5,6 +5,7 @@ module.exports = defineConfig({
 
     reporterOptions: {
         charts: true,
+        reportDir: 'mochawesome-report',
         reportPageTitle: 'Relatório de Testes - EBAC Store',
         embeddedScreenshots: true,
         inlineAssets: true,

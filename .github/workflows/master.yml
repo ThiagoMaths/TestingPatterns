@@ -14,14 +14,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
     - uses: actions/setup-node@v4
       with: 
         node-version: '20'
+    - name: Install Dependencies 
+      run: npm install
+      
     - name: Cypress run
       uses: cypress-io/github-action@v5
       continue-on-error: true
       with:
-        install-command: npm install
         browser: chrome
         start: npm start
 
